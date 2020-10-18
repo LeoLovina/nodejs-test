@@ -11,7 +11,7 @@ http.createServer(function (request, response) {
    
    // Send the response body "Hello World"
    response.end('Hello World Haha\n');
-}).listen(80);
+}).listen(process.env.PORT || 8000);
 
 // Print URL for accessing server
-console.log('Server running at http://127.0.0.1/')
+console.log('Server running at http://127.0.0.1/:8000')
