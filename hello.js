@@ -10,7 +10,7 @@ http.createServer(function (request, response) {
    response.writeHead(200, {'Content-Type': 'text/plain'});
    
    // Send the response body "Hello World"
-   response.end('Hello World\n');
+   response.end('Hello World Haha\n');
 }).listen(8000);
 
 // Print URL for accessing server
