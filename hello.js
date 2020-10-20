@@ -1,6 +1,3 @@
-// var message = 'Hello World';
-// console.log(message);
-
 var http = require("http");
 
 //create HTTP server and listen to port 8000
@@ -14,4 +11,4 @@ http.createServer(function (request, response) {
 }).listen(process.env.PORT || 8000);
 
 // Print URL for accessing server
-console.log('Server running at http://127.0.0.1/:8000  Hello')
+console.log('Server running at http://127.0.0.1/:8000')
