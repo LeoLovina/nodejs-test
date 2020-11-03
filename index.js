@@ -1,8 +1,10 @@
 const express = require('express');
+const bodyParser = require("body-parser");
+
 let port = process.env.PORT || 8000;
 const app = express();
 
-app.use('/static', express.static('assess'));
+app.use('/static', express.static('assets'));
 app.listen(port, ()=>{
     console.log(`web server is listening on ${port}`);
 });

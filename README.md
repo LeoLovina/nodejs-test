@@ -6,8 +6,13 @@ app.METHOD(PATH, HANDLER)
 ```
 
 - static files
+If all static files are in folder assets, then you can 
 ``` javascript
-app.use(express.static('assess'));
-app.use('/static', express.static('public'));
+app.use('/static', express.static('assets'));
 ```
-http://localhost:8000/images/onepiece.jpg
+To get the static file: http://localhost:8000/static/images/onepiece.jpg
+
+``` javascript
+app.use(express.static('assets'));
+```
+To get the static file: http://localhost:8000/images/onepiece.jpg
