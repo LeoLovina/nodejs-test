@@ -12,6 +12,7 @@ Node.js is a single-threaded application, but it can support concurrency via the
 - callback functions are called when an asynchronous function returns its result.
 - event handling works on the observer pattern. The functions that listen to events act as Observers.
 
+All objects which emit events are the instances of events.EventEmitter.
 # Use ES6 imports
 ```
 Add { "type": "module" } in the nearest package.json
